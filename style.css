@@ -64,8 +64,8 @@ body{
 
 .tilde-open{
   text-align: center;
-  font-size: 1.6rem;
-  margin: 2.2em 0 2.4em;
+  font-size: 1.9rem;     /* slightly larger */
+  margin: 1.8em 0 2.8em; /* rebalanced spacing: closer to image, more air before text */
   opacity: 0.75;
 }
 
