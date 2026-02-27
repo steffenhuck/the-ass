@@ -26,8 +26,8 @@ body{
 
 .title{
   font-family: 'Bodoni Moda', serif;
-  font-size: clamp(2.8rem, 6vw, 3.8rem);
-  letter-spacing: 0.18em;      /* substantially more tracking */
+  font-size: clamp(3rem, 6.5vw, 4.2rem);
+  letter-spacing: 0.24em;   /* increased */
   text-align: center;
   margin-bottom: 0.4em;
 }
