@@ -1,9 +1,11 @@
 :root{
-  --bg: #2f1f24;
-  --ink: #f3ede7;
+  --bg: #3d2b30;   /* slightly lighter plum */
+  --ink: #f3ede7;  /* warm ivory */
 }
 
 *{ box-sizing: border-box; }
+
+html, body{ height: 100%; }
 
 body{
   margin: 0;
@@ -16,34 +18,36 @@ body{
 
 .container{
   max-width: 720px;
-  margin: 80px auto 100px;
+  margin: 80px auto 110px;
   padding: 0 24px;
 }
 
 /* =========================
-   TITLE
+   TITLE BLOCK
 ========================= */
 
 .title{
   font-family: 'Bodoni Moda', serif;
   font-size: clamp(3rem, 6.5vw, 4.2rem);
-  letter-spacing: 0.24em;   /* increased */
+  letter-spacing: 0.24em;   /* strong tracking */
+  word-spacing: -0.15em;    /* tighten THE ␣ ASS gap */
   text-align: center;
-  margin-bottom: 0.4em;
+  margin: 0 0 0.38em;
 }
 
 .subtitle{
   text-align: center;
-  font-size: 2rem;          /* strong presence, but not competing */
-  letter-spacing: 0.06em;   /* subtle spacing to echo the title */
-  margin-bottom: 1.8em;
+  font-size: 2rem;          /* bold but still subordinate */
+  letter-spacing: 0.06em;   /* echoes title without shouting */
+  margin: 0 0 1.4em;
   opacity: 0.95;
 }
 
 .cast{
   text-align: center;
-  font-size: 1.2rem;           /* larger */
-  margin-bottom: 2.8em;
+  font-size: 1.2rem;
+  margin: 0 0 0;            /* we handle the big gap via image wrapper */
+  opacity: 0.95;
 }
 
 .cast p{
@@ -56,12 +60,13 @@ body{
 
 .image-wrapper{
   text-align: center;
-  margin: 1.8em 0 3em;
+  margin: 2.7em 0 3.1em;    /* more space between cast and photo */
 }
 
 .image-wrapper img{
   max-width: 100%;
   border: 3px solid var(--ink);
+  border-radius: 3px;       /* slight softening, still “print” */
   box-shadow: 0 10px 28px rgba(0,0,0,0.42);
 }
 
@@ -70,8 +75,7 @@ body{
 ========================= */
 
 .dialogue{
-  margin-top: 1em;
-  position: relative;
+  margin-top: 0.6em;
 }
 
 .turn{
@@ -84,32 +88,52 @@ body{
   letter-spacing: 0.08em;
   font-size: 0.95rem;
   position: absolute;
-  left: -60px;        /* pushes initials into left margin */
-  top: 0;
+  left: -60px;              /* initials in the margin */
+  top: 0.05em;
+  opacity: 0.9;
 }
 
 .line{
-  margin: 0.25em 0;   /* tighter spacing between initials + first line */
-  line-height: 1.75;  /* more breathing room on dark background */
-  font-size: 1.25rem; /* larger dialogue text */
+  margin: 0.25em 0;
+  line-height: 1.75;
+  font-size: 1.25rem;
 }
 
 /* =========================
-   MOBILE ADJUSTMENT
+   MOBILE
 ========================= */
 
 @media (max-width: 600px){
 
+  .container{
+    padding: 0 18px;
+    margin: 68px auto 96px;
+  }
+
+  .title{
+    letter-spacing: 0.20em;   /* slightly less aggressive on small screens */
+    word-spacing: -0.10em;
+  }
+
+  .subtitle{
+    font-size: 1.55rem;
+    letter-spacing: 0.05em;
+  }
+
+  .cast{
+    font-size: 1.12rem;
+  }
+
+  .image-wrapper{
+    margin: 2.2em 0 2.6em;
+  }
+
   .speaker{
-    position: static;
-    margin-bottom: 0.2em;
+    position: static;         /* margin initials don't work well on narrow screens */
+    margin: 0 0 0.2em;
   }
 
   .line{
     font-size: 1.1rem;
-  }
-
-  .container{
-    padding: 0 18px;
   }
 }
