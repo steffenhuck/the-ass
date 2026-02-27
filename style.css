@@ -64,11 +64,10 @@ body{
 
 .tilde-open{
   text-align: center;
-  font-size: 6rem;       /* dramatic */
-  line-height: 1;
-  margin: 1.2em 0 1.4em; /* tighter spacing */
-  opacity: 0.18;         /* very faint so it becomes atmospheric */
-  letter-spacing: 0;
+  font-size: 5.5rem;   /* slightly reduced from 6rem */
+  line-height: 0.9;
+  margin: 0.8em 0 0.9em;  /* much tighter */
+  color: var(--ink);   /* same color as text */
 }
 
 .tilde-close{
