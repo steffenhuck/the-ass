@@ -34,8 +34,9 @@ body{
 
 .subtitle{
   text-align: center;
-  font-size: 1.25rem;          /* larger */
-  margin-bottom: 1.6em;
+  font-size: 1.45rem;   /* slightly larger */
+  margin-bottom: 1.7em;
+  opacity: 0.9;
 }
 
 .cast{
