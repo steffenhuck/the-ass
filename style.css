@@ -114,3 +114,13 @@ body{
   color: var(--ink);
   text-decoration: none;
 }
+
+@media (max-width: 640px){
+  .turn{
+    padding-left: 3.2rem;   /* make room for TD/MM/FE */
+  }
+  .speaker{
+    left: 0;
+    top: 0.05em;
+  }
+}
