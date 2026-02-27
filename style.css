@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  background-color: #2f1f24;
+  color: #f3ede7;
+  font-family: 'Crimson Pro', serif;
+}
+
+.container {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 3rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.cast {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.cast p {
+  margin: 0.3em 0;
+}
+
+.image-wrapper {
+  text-align: center;
+  margin: 2em 0 3em 0;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  border: 3px solid #f3ede7;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.dialogue {
+  margin-top: 1em;
+}
+
+.speaker {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  margin-top: 2em;
+  margin-bottom: 0.2em;
+}
