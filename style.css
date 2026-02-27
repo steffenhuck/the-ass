@@ -72,9 +72,9 @@ body{
 
 .tilde-close{
   text-align: center;
-  font-size: 0.95rem;
-  margin: 3.2em 0 1.2em;
-  opacity: 0.7;
+  font-size: 1.4rem;   /* larger but still subordinate */
+  margin: 2.4em 0 1.4em;
+  color: var(--ink);
 }
 
 /* DIALOGUE */
