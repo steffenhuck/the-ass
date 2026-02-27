@@ -1,11 +1,9 @@
 :root{
-  --bg: #3d2b30;   /* slightly lighter plum */
-  --ink: #f3ede7;  /* warm ivory */
+  --bg: #3d2b30;
+  --ink: #f3ede7;
 }
 
 *{ box-sizing: border-box; }
-
-html, body{ height: 100%; }
 
 body{
   margin: 0;
@@ -13,7 +11,6 @@ body{
   color: var(--ink);
   font-family: 'Crimson Pro', serif;
   -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
 }
 
 .container{
@@ -22,61 +19,64 @@ body{
   padding: 0 24px;
 }
 
-/* =========================
-   TITLE BLOCK
-========================= */
+/* TITLE */
 
 .title{
   font-family: 'Bodoni Moda', serif;
   font-size: clamp(3rem, 6.5vw, 4.2rem);
-  letter-spacing: 0.24em;   /* strong tracking */
-  word-spacing: -0.15em;    /* tighten THE ␣ ASS gap */
+  letter-spacing: 0.24em;
+  word-spacing: -0.15em;
   text-align: center;
   margin: 0 0 0.38em;
 }
 
 .subtitle{
   text-align: center;
-  font-size: 2rem;          /* bold but still subordinate */
-  letter-spacing: 0.06em;   /* echoes title without shouting */
-  margin: 0 0 1.4em;
-  opacity: 0.95;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.4em;
 }
 
 .cast{
   text-align: center;
   font-size: 1.2rem;
-  margin: 0 0 0;            /* we handle the big gap via image wrapper */
-  opacity: 0.95;
 }
 
 .cast p{
   margin: 0.35em 0;
 }
 
-/* =========================
-   IMAGE
-========================= */
+/* IMAGE */
 
 .image-wrapper{
   text-align: center;
-  margin: 3.6em 0 3.1em;    /* more space between cast and photo */
+  margin: 3.6em 0 3.1em;
 }
 
 .image-wrapper img{
   max-width: 100%;
   border: 3px solid var(--ink);
-  border-radius: 3px;       /* slight softening, still “print” */
+  border-radius: 3px;
   box-shadow: 0 10px 28px rgba(0,0,0,0.42);
 }
 
-/* =========================
-   DIALOGUE
-========================= */
+/* TILDES */
 
-.dialogue{
-  margin-top: 0.6em;
+.tilde-open{
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 2.2em 0 2.4em;
+  opacity: 0.75;
 }
+
+.tilde-close{
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 3.2em 0 1.2em;
+  opacity: 0.7;
+}
+
+/* DIALOGUE */
 
 .turn{
   margin: 1.4em 0;
@@ -88,9 +88,8 @@ body{
   letter-spacing: 0.08em;
   font-size: 0.95rem;
   position: absolute;
-  left: -60px;              /* initials in the margin */
+  left: -60px;
   top: 0.05em;
-  opacity: 0.9;
 }
 
 .line{
@@ -99,41 +98,18 @@ body{
   font-size: 1.25rem;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* SIGNATURE */
 
-@media (max-width: 600px){
+.signature{
+  text-align: center;
+  margin-top: 0.8em;
+  margin-bottom: 1.5em;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  opacity: 0.7;
+}
 
-  .container{
-    padding: 0 18px;
-    margin: 68px auto 96px;
-  }
-
-  .title{
-    letter-spacing: 0.20em;   /* slightly less aggressive on small screens */
-    word-spacing: -0.10em;
-  }
-
-  .subtitle{
-    font-size: 1.55rem;
-    letter-spacing: 0.05em;
-  }
-
-  .cast{
-    font-size: 1.12rem;
-  }
-
-  .image-wrapper{
-    margin: 2.2em 0 2.6em;
-  }
-
-  .speaker{
-    position: static;         /* margin initials don't work well on narrow screens */
-    margin: 0 0 0.2em;
-  }
-
-  .line{
-    font-size: 1.1rem;
-  }
+.signature a{
+  color: var(--ink);
+  text-decoration: none;
 }
